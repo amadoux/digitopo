@@ -43,6 +43,18 @@ public class CacheConfiguration {
             createCache(cm, io.digitopo.application.domain.User.class.getName());
             createCache(cm, io.digitopo.application.domain.Authority.class.getName());
             createCache(cm, io.digitopo.application.domain.User.class.getName() + ".authorities");
+            createCache(cm, io.digitopo.application.domain.Region.class.getName());
+            createCache(cm, io.digitopo.application.domain.Country.class.getName());
+            createCache(cm, io.digitopo.application.domain.Location.class.getName());
+            createCache(cm, io.digitopo.application.domain.Department.class.getName());
+            createCache(cm, io.digitopo.application.domain.Department.class.getName() + ".employees");
+            createCache(cm, io.digitopo.application.domain.Task.class.getName());
+            createCache(cm, io.digitopo.application.domain.Task.class.getName() + ".jobs");
+            createCache(cm, io.digitopo.application.domain.Employee.class.getName());
+            createCache(cm, io.digitopo.application.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, io.digitopo.application.domain.Job.class.getName());
+            createCache(cm, io.digitopo.application.domain.Job.class.getName() + ".tasks");
+            createCache(cm, io.digitopo.application.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
